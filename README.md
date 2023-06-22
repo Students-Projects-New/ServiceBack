@@ -15,6 +15,11 @@ Servicios Students Projects
 - [Authors](#authors)
 
 
+## architect
+
+![ERD DB Users Service](https://i.postimg.cc/W1nxK9YY/architect.png)
+
+
 ## Documentation
 
 Each service uses a PostgresSQL database which is automatically generated after using the migrations embedded in the code, before any deployment, it is important to highlight that the databases must be previously created with the specific name mentioned in the installation instructions...
