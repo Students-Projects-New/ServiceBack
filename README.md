@@ -1,8 +1,9 @@
-# Project Title
+# Student project
 
 Servicios Students Projects
 
 ## Table of Contents
+- [Architect](#Architect)
 - [Documentation](#documentation)
   - [Entity-Relationship Diagrams](#Entity-Relationship-Diagrams)
   - [Technical Documentation: Worker Management Deploy Service](#Technical Documentation: Worker Management Deploy Service)
