@@ -1,0 +1,43 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  users:
+    build: 
+    # build from Dockerfile
+      context: ./users
+      dockerfile: Dockerfile
+    ports: 
+      - "8002:8002"
+    volumes:
+     - ./users:/home/app
+    command: bash -c "cd /home/app && python3 manage.py runserver 8002 "
+  projects:
+    build: 
+    # build from Dockerfile
+      context: ./projects
+      dockerfile: Dockerfile
+    ports:
+     - "8000:8000"
+    volumes:
+     - ./projects:/home/app
+    # entrypoint: 
+    command: bash -c "cd /home/app && pip install -r requirements.txt && python3 manage.py runserver 8000"
+  academic:
+    build: 
+    # build from Dockerfile
+      context: ./academic
+      dockerfile: Dockerfile
+    ports:
+     - "8001:8001"
+    volumes:
+     - ./academic:/home/app
+    command: bash -c "cd /home/app && pip install -r requirements.txt && python3 manage.py runserver 8001"
+  deploy:
+    build: 
+    # build from Dockerfile
+      context: ./deploy
+      dockerfile: Dockerfile
+    volumes:
+     - ./deploy:/home/app
+    command: bash -c "cd /home/app && pip install -r requirements.txt && python main.py"

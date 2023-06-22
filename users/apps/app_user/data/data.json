@@ -1,0 +1,38 @@
+[
+    {
+        "model": "app_user.Rol",
+        "pk": 1,
+        "fields": {
+            "name": "ESTUDIANTE"
+        }
+    },
+    {
+        "model": "app_user.Rol",
+        "pk": 2,
+        "fields": {
+            "name": "PROFESOR"
+        }
+    },
+    {
+        "model": "app_user.Rol",
+        "pk": 3,
+        "fields": {
+            "name": "ADMINISTRATIVO"
+        }
+    },
+
+    {
+        "model": "app_user.TypeDatabase",
+        "pk": 1,
+        "fields": {
+            "type": "PostgreSQL"
+        }
+    },
+    {
+        "model": "app_user.TypeDatabase",
+        "pk": 2,
+        "fields": {
+            "type": "MariaDB"
+        }
+    }
+]

@@ -1,0 +1,1 @@
+sudo .venv/bin/gunicorn --bind localhost:8000 sp_service_projects.wsgi -t 600 --daemon

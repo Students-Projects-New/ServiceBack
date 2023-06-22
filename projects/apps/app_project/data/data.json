@@ -1,0 +1,135 @@
+[
+    {
+        "model": "app_project.TypeTag",
+        "pk": 1,
+        "fields": {
+            "name": "AREA"
+        }
+    },
+    {
+        "model": "app_project.TypeTag",
+        "pk": 2,
+        "fields": {
+            "name": "PROGRAMMING"
+        }
+    },
+
+    {
+        "model": "app_project.Tag",
+        "pk": 1,
+        "fields": {
+            "name": "JAVASCRIPT",
+            "type_tag": 2
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 2,
+        "fields": {
+            "name": "PYTHON",
+            "type_tag": 2
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 3,
+        "fields": {
+            "name": "JAVA",
+            "type_tag": 2
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 4,
+        "fields": {
+            "name": "C#",
+            "type_tag": 2
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 5,
+        "fields": {
+            "name": "PHP",
+            "type_tag": 2
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 6,
+        "fields": {
+            "name": "C++",
+            "type_tag": 2
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 7,
+        "fields": {
+            "name": "RUBY",
+            "type_tag": 2
+        }
+    },
+
+    {
+        "model": "app_project.Tag",
+        "pk": 8,
+        "fields": {
+            "name": "DATA SCIENCE",
+            "type_tag": 1
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 9,
+        "fields": {
+            "name": "MACHINE LEARNING",
+            "type_tag": 1
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 10,
+        "fields": {
+            "name": "ARTIFICIAL INTELLIGENCE",
+            "type_tag": 1
+        }
+    },
+    {
+        "model": "app_project.Tag",
+        "pk": 11,
+        "fields": {
+            "name": "WEB PROGRAMMING",
+            "type_tag": 1
+        }
+    },
+
+    {
+        "model": "app_project.StatusStage",
+        "pk": 1,
+        "fields": {
+            "status": "NOT STARTED"
+        }
+    },
+    {
+        "model": "app_project.StatusStage",
+        "pk": 2,
+        "fields": {
+            "status": "IN PROGRESS"
+        }
+    },
+    {
+        "model": "app_project.StatusStage",
+        "pk": 3,
+        "fields": {
+            "status": "IN REVIEW"
+        }
+    },
+    {
+        "model": "app_project.StatusStage",
+        "pk": 4,
+        "fields": {
+            "status": "COMPLETED"
+        }
+    }
+]
