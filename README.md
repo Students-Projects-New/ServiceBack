@@ -15,8 +15,22 @@ Servicios Students Projects
 - [Authors](#authors)
 
 
-## architect
+## Architect
+The software architecture you mentioned involves four containers: users, academic, projects, and deploy. These containers are orchestrated using Docker, which is a containerization platform. Each container represents a specific service or component of the application.
 
+The users container handles user-related functionality, such as user authentication and management. The academic container likely deals with academic-related features, such as courses, grades, or academic records. The projects container may handle project management functionalities. Lastly, the deploy container is responsible for deploying the application.
+
+To deploy these containers, the architecture utilizes Gunicorn, which is a Python Web Server Gateway Interface (WSGI) HTTP server. Gunicorn is commonly used to deploy web applications written in Python. It acts as a bridge between the web server (Nginx) and the application container, providing high performance and scalability.
+
+The web server used in this architecture is Nginx, a popular open-source web server and reverse proxy server. Nginx acts as a front-end server, receiving requests from users and forwarding them to the appropriate container based on the requested service. Nginx provides load balancing, caching, and SSL/TLS termination, among other features.
+
+The entire architecture is deployed on Google Cloud (GCloud), which is a cloud computing platform provided by Google. GCloud offers a range of services, including virtual machines, storage, and networking. In this case, it hosts the Nginx server and the Docker containers.
+
+Each service (users, academic, projects, and deploy) has its own database. The architecture uses both PostgreSQL and MySQL databases. PostgreSQL is an open-source relational database management system known for its robustness and scalability. MySQL is another popular open-source relational database management system, known for its ease of use and widespread adoption.
+
+Finally, the front-end of the application is built using Angular. Angular is a popular TypeScript-based framework for building web applications. It provides tools and components for creating a responsive and interactive user interface.
+
+In summary, the described architecture utilizes Docker for containerization, with four containers representing different services. Gunicorn is used to deploy the containers on the Nginx server hosted on Google Cloud. Each service connects to its respective PostgreSQL or MySQL database, and the front-end is built using Angular.
 ![ERD DB Users Service](https://i.postimg.cc/W1nxK9YY/architect.png)
 
 
